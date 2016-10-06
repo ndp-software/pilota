@@ -191,3 +191,6 @@ The dispatching strategy can be overriden by passing your own dispatcher. See `n
 
 ## References
 
+## License
+
+[Apache 2.0](LICENSE.TXT)
