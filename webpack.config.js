@@ -3,7 +3,7 @@ var UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
 var path           = require('path');
 var env            = require('yargs').argv.mode;
 
-var libraryName = 'test-pantry';
+var libraryName = 'pilota';
 
 var plugins = [], outputFile;
 
@@ -15,7 +15,7 @@ if (env === 'build') {
 }
 
 var config = {
-  entry   : __dirname + '/src/test-pantry.js',
+  entry   : __dirname + '/src/pilota.js',
   devtool : 'source-map',
   output  : {
     path           : __dirname + '/lib',
