@@ -9,6 +9,10 @@
     "test:watch": "mocha --compilers js:babel-core/register --colors -w 'test/**/*spec.js'",
     "dev": "WEBPACK_ENV=dev webpack --progress --colors --watch"
   },
+  "files": [
+    "lib/pilota.js",
+    "lib/pilota.js.map"
+  ],
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/ndp-software/pilota.git"

@@ -15,8 +15,10 @@ if (env === 'build') {
 }
 
 var config = {
-  entry   : __dirname + '/src/pilota.js',
-  devtool : 'source-map',
+  entry : [
+    __dirname + '/src/cmdBus.js',
+    __dirname + '/src/submodelCmd.js'
+  ],
   output  : {
     path           : __dirname + '/lib',
     filename       : outputFile,
@@ -24,6 +26,7 @@ var config = {
     libraryTarget  : 'umd',
     umdNamedDefine : true
   },
+  devtool : 'source-map',
   module  : {
     loaders : [
       {
