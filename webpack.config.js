@@ -15,10 +15,7 @@ if (env === 'build') {
 }
 
 var config = {
-  entry : [
-    __dirname + '/src/cmdBus.js',
-    __dirname + '/src/submodelCmd.js'
-  ],
+  entry : __dirname + '/src/pilota.js',
   output  : {
     path           : __dirname + '/lib',
     filename       : outputFile,
