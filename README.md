@@ -193,4 +193,5 @@ The dispatching strategy can be overriden by passing your own dispatcher. See `n
 
 ## License
 
-[Apache 2.0](LICENSE.TXT)
+Copyright (c) 2016 Andrew J. Peterson
+[Apache 2.0 License](https://github.com/ndp-software/pilota/raw/master/LICENSE)
