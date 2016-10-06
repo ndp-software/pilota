@@ -1,4 +1,4 @@
-# Pilota: RxJS Command Bus
+# Pilota: RxJS Command Bus [![Build Status](https://travis-ci.org/ndp-software/pilota.svg?branch=master)](https://travis-ci.org/ndp-software/pilota)
 
 <img src="http://interviewmg.ru/wp-content/uploads/2012/03/amelia-earhart-big.jpg" alt="Image of Amerlia Earhart" width="300" float="right">
 
@@ -185,8 +185,6 @@ The dispatching strategy can be overriden by passing your own dispatcher. See `n
 
 ## TODOs
 
-* pull into its own repo
-* combineReducer from Redux
 * decide `addHandler` vs. `on`
 * `addHandlers`
 * asynchronous pattern
