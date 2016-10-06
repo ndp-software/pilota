@@ -9,7 +9,7 @@ The Pilota library provides a command dispatcher for use with RxJS streams. The 
 This shows a set of commands that increment and decrement a simple integer state:
 
 ```javascript
-import {newCmdBus$} from 'pilota/cmdBus.js'
+import {newCmdBus$} from 'pilota'
 
 const state$ = new Rx.BehaviorSubject(0)
 ...
