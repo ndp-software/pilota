@@ -1,13 +1,13 @@
 var webpack        = require('webpack');
 var UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
 var path           = require('path');
-var env            = require('yargs').argv.mode;
+var mode           = require('yargs').argv.mode;
 
 var libraryName = 'pilota';
 
 var plugins = [], outputFile;
 
-if (env === 'build') {
+if (mode === 'build') {
   plugins.push(new UglifyJsPlugin({ minimize : true }));
   outputFile = libraryName + '.min.js';
 } else {
@@ -38,10 +38,6 @@ var config = {
       }
     ]
   },
-  //resolve : {
-  //  root       : path.resolve('./src'),
-  //  extensions : ['', '.js']
-  //},
   plugins : plugins
 };
 

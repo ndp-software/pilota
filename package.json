@@ -1,14 +1,14 @@
 {
   "name": "pilota",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Command bus for RxJS",
-  "main": "lib/pilota.js",
   "scripts": {
-    "build": "WEBPACK_ENV=build webpack",
+    "build": "webpack -p",
     "test": "mocha --compilers js:babel-core/register --colors 'test/**/*spec.js'",
     "test:watch": "mocha --compilers js:babel-core/register --colors -w 'test/**/*spec.js'",
     "dev": "WEBPACK_ENV=dev webpack --progress --colors --watch"
   },
+  "main": "lib/pilota.js",
   "files": [
     "lib/pilota.js",
     "lib/pilota.js.map"
