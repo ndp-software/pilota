@@ -1,11 +1,13 @@
-import {Subject} from 'rxjs/Subject'
-import 'rxjs/add/operator/map'
-import 'rxjs/add/operator/filter'
-import 'rxjs/add/operator/withLatestFrom'
-import {async} from 'rxjs/scheduler/async'
-import {subscribeLog, isFunction} from './util.js'
-import {newObjectResolver} from './resolver.js'
-import {newDispatcher} from './dispatcher.js'
+import { Subject }                  from 'rxjs'
+import {
+  map,
+  filter,
+  withLatestFrom,
+}                                   from 'rxjs/operators'
+import { async }                    from 'rxjs/scheduler/async'
+import { subscribeLog, isFunction } from './util.js'
+import { newObjectResolver }        from './resolver.js'
+import { newDispatcher }            from './dispatcher.js'
 
 /*
  Bus to dispatch and apply commands to the state stream.
@@ -24,7 +26,7 @@ import {newDispatcher} from './dispatcher.js'
 
  */
 
-export function newCmdBus$(state$, dispatch) {
+export function newCmdBus$ (state$, dispatch) {
 
   const cmdBus$ = new Subject(async)
 
@@ -37,16 +39,17 @@ export function newCmdBus$(state$, dispatch) {
     cmdBus$.on         = cmdBus$.addHandler // alias
   }
 
-  cmdBus$
-      .map((cmd) => typeof cmd == 'string' ? {name: cmd} : cmd)
-      .withLatestFrom(state$, (cmd, state) => cmdBus$.dispatch(state, cmd))
-      .filter(x => x !== undefined)
-      .subscribe(state$)
+  cmdBus$.pipe(
+    map((cmd) => typeof cmd == 'string' ? { name: cmd } : cmd),
+    withLatestFrom(state$, (cmd, state) => cmdBus$.dispatch(state, cmd)),
+    filter(x => x !== undefined),
+         )
+         .subscribe(state$)
 
   return cmdBus$
 }
 
-export function logCmdBus(cmdBus$) {
+export function logCmdBus (cmdBus$) {
   subscribeLog(cmdBus$, 'cmdBus$')
 }
 

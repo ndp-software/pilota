@@ -2,7 +2,7 @@
 
 import {assert} from 'chai'
 
-import {BehaviorSubject} from 'rxjs/BehaviorSubject'
+import { BehaviorSubject }                  from 'rxjs'
 
 import {newCmdBus$} from '../src/cmdBus.js'
 import {submodelCmd} from '../src/submodelCmd.js'

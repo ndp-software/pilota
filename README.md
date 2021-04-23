@@ -27,6 +27,10 @@ Rx.Observer.fromEvent(e, 'click').mapTo('decrement').subscribe(bus$)
 
 ## Usage Steps
 
+#### 0. Installation
+
+Use pilota@5.0.0 for RxJS 5, and then later releases for 6.
+
 #### 1. Create the state stream
 
 Use an RxJS `Subject` to represent the model or state. An `Rx.BehaviorSubject` works well.
@@ -193,5 +197,5 @@ The dispatching strategy can be overriden by passing your own dispatcher. See `n
 
 ## License
 
-Copyright (c) 2016 Andrew J. Peterson
+Copyright (c) 2016-2021 Andrew J. Peterson
 [Apache 2.0 License](https://github.com/ndp-software/pilota/raw/master/LICENSE)
