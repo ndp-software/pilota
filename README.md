@@ -1,4 +1,4 @@
-# Pilota: RxJS Command Bus [![Build Status](https://travis-ci.org/ndp-software/pilota.svg?branch=master)](https://travis-ci.org/ndp-software/pilota)
+# Pilota: RxJS Command Bus [![Node.js CI](https://github.com/ndp-software/pilota/actions/workflows/template.yml/badge.svg)](https://github.com/ndp-software/pilota/actions/workflows/template.yml)
 
 <img src="http://interviewmg.ru/wp-content/uploads/2012/03/amelia-earhart-big.jpg" alt="Image of Amerlia Earhart" width="300" float="right">
 
