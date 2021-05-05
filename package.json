@@ -1,9 +1,9 @@
 {
   "name": "pilota",
-  "version": "6.0.2",
+  "version": "7.0.0",
   "description": "Command bus for RxJS",
   "scripts": {
-    "build": "webpack -p",
+    "build": "webpack --progress",
     "test": "mocha --require babel-core/register --colors 'test/**/*spec.js'",
     "test:watch": "mocha --require babel-core/register --colors -w 'test/**/*spec.js'",
     "dev": "WEBPACK_ENV=dev webpack --progress --colors --watch"
@@ -30,21 +30,22 @@
   },
   "homepage": "https://github.com/ndp-software/pilota#readme",
   "dependencies": {
-    "rxjs": "^6"
+    "rxjs": "^7"
   },
   "devDependencies": {
-    "babel": "^6.5",
+    "babel": "*",
     "babel-core": "*",
     "babel-eslint": "*",
-    "babel-loader": "^6.2",
+    "babel-loader": "*",
     "babel-plugin-add-module-exports": "*",
     "babel-preset-env": "*",
-    "chai": "^3.5.0",
+    "chai": "*",
     "eslint": "*",
     "eslint-loader": "*",
-    "mocha": "^8.3.2",
+    "mocha": "*",
     "rxjs-compat": "*",
-    "simple-mock": "^0.7.0",
-    "webpack": "^2.1.0-beta.25"
+    "simple-mock": "*",
+    "webpack": "*",
+    "webpack-cli": "*"
   }
 }

@@ -4,7 +4,7 @@ import {
   filter,
   withLatestFrom,
 }                                   from 'rxjs/operators'
-import { async }                    from 'rxjs/scheduler/async'
+import { asyncScheduler }           from 'rxjs'
 import { subscribeLog, isFunction } from './util.js'
 import { newObjectResolver }        from './resolver.js'
 import { newDispatcher }            from './dispatcher.js'
@@ -28,7 +28,7 @@ import { newDispatcher }            from './dispatcher.js'
 
 export function newCmdBus$ (state$, dispatch) {
 
-  const cmdBus$ = new Subject(async)
+  const cmdBus$ = new Subject(asyncScheduler)
 
   if (isFunction(dispatch)) {
     cmdBus$.dispatch = dispatch
