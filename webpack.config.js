@@ -25,15 +25,10 @@ var config = {
   },
   devtool : 'source-map',
   module  : {
-    loaders : [
+    rules : [
       {
         test    : /\.js$/,
-        loader  : 'babel',
-        exclude : /node_modules/
-      },
-      {
-        test    : /\.js$/,
-        loader  : "eslint-loader",
+        loader  : 'babel-loader',
         exclude : /node_modules/
       }
     ]

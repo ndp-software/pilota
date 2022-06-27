@@ -3,7 +3,7 @@
   "version": "7.0.0",
   "description": "Command bus for RxJS",
   "scripts": {
-    "build": "webpack --progress",
+    "build": "node ./node_modules/.bin/webpack --progress",
     "test": "mocha --require babel-core/register --colors 'test/**/*spec.js'",
     "test:watch": "mocha --require babel-core/register --colors -w 'test/**/*spec.js'",
     "dev": "WEBPACK_ENV=dev webpack --progress --colors --watch"
@@ -35,7 +35,6 @@
   "devDependencies": {
     "babel": "*",
     "babel-core": "*",
-    "babel-eslint": "*",
     "babel-loader": "*",
     "babel-plugin-add-module-exports": "*",
     "babel-preset-env": "*",
