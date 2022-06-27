@@ -46,6 +46,7 @@
     "rxjs-compat": "*",
     "simple-mock": "*",
     "webpack": "*",
-    "webpack-cli": "*"
+    "webpack-cli": "*",
+    "yargs": "*"
   }
 }
