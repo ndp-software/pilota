@@ -13,7 +13,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x, 14.x, 15.x]
+        node-version: [15.x, 16.x, 17.x, 18.x]
 
     steps:
       - uses: actions/checkout@v2
@@ -22,6 +22,5 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
-      - run: ./node_modules/.bin/eslint src
       - run: npm run build
       - run: npm test

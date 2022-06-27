@@ -40,8 +40,6 @@
     "babel-plugin-add-module-exports": "*",
     "babel-preset-env": "*",
     "chai": "*",
-    "eslint": "*",
-    "eslint-loader": "*",
     "mocha": "*",
     "rxjs-compat": "*",
     "simple-mock": "*",
