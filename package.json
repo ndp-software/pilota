@@ -33,11 +33,11 @@
     "rxjs": "^7"
   },
   "devDependencies": {
-    "babel": "*",
-    "babel-core": "*",
+    "@babel/cli": "*",
+    "@babel/core": "*",
+    "@babel/preset-env": "*",
+    "@babel/register": "*",
     "babel-loader": "*",
-    "babel-plugin-add-module-exports": "*",
-    "babel-preset-env": "*",
     "chai": "*",
     "mocha": "*",
     "rxjs-compat": "*",
