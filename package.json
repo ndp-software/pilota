@@ -4,7 +4,7 @@
   "description": "Command bus for RxJS",
   "scripts": {
     "build": "node ./node_modules/.bin/webpack-cli --progress --mode=production",
-    "test": "mocha --require babel-core/register --colors 'test/**/*spec.js'",
+    "test": "mocha --require @babel/register --colors 'test/**/*spec.js'",
     "test:watch": "mocha --require babel-core/register --colors -w 'test/**/*spec.js'",
     "dev": "WEBPACK_ENV=dev node ./node_modules/.bin/webpack-cli watch --mode=development"
   },
