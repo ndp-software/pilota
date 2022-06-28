@@ -3,10 +3,10 @@
   "version": "7.0.0",
   "description": "Command bus for RxJS",
   "scripts": {
-    "build": "node ./node_modules/.bin/webpack --progress",
+    "build": "node ./node_modules/.bin/webpack-cli --progress --mode=production",
     "test": "mocha --require babel-core/register --colors 'test/**/*spec.js'",
     "test:watch": "mocha --require babel-core/register --colors -w 'test/**/*spec.js'",
-    "dev": "WEBPACK_ENV=dev webpack --progress --colors --watch"
+    "dev": "WEBPACK_ENV=dev node ./node_modules/.bin/webpack-cli watch --mode=development"
   },
   "main": "lib/pilota.js",
   "files": [
