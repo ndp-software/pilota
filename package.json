@@ -1,49 +1,49 @@
 {
-  "name": "pilota",
-  "version": "7.0.0",
-  "description": "Command bus for RxJS",
-  "scripts": {
-    "build": "node ./node_modules/.bin/webpack-cli --progress --mode=production",
-    "test": "mocha --require @babel/register --colors 'test/**/*spec.js'",
-    "test:watch": "mocha --require babel-core/register --colors -w 'test/**/*spec.js'",
-    "dev": "WEBPACK_ENV=dev node ./node_modules/.bin/webpack-cli watch --mode=development"
-  },
-  "main": "lib/pilota.js",
-  "files": [
-    "lib/pilota.js",
-    "lib/pilota.js.map"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/ndp-software/pilota.git"
-  },
-  "keywords": [
-    "rxjs",
-    "event bus",
-    "reducer",
-    "factory"
-  ],
-  "author": "Andrew J. Peterson",
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/ndp-software/pilota/issues"
-  },
-  "homepage": "https://github.com/ndp-software/pilota#readme",
-  "dependencies": {
-    "rxjs": "^7"
-  },
-  "devDependencies": {
-    "@babel/cli": "*",
-    "@babel/core": "*",
-    "@babel/preset-env": "*",
-    "@babel/register": "*",
-    "babel-loader": "*",
-    "chai": "*",
-    "mocha": "*",
-    "rxjs-compat": "*",
-    "simple-mock": "*",
-    "webpack": "*",
-    "webpack-cli": "*",
-    "yargs": "*"
-  }
+    "name": "pilota",
+    "version": "7.0.1",
+    "description": "Command bus for RxJS",
+    "scripts": {
+        "build": "node ./node_modules/.bin/webpack-cli --progress --mode=production",
+        "test": "mocha --require @babel/register --colors 'test/**/*spec.js'",
+        "test:watch": "mocha --require babel-core/register --colors -w 'test/**/*spec.js'",
+        "dev": "WEBPACK_ENV=dev node ./node_modules/.bin/webpack-cli watch --mode=development"
+    },
+    "main": "lib/pilota.js",
+    "files": [
+        "lib/pilota.js",
+        "lib/pilota.js.map"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/ndp-software/pilota.git"
+    },
+    "keywords": [
+        "rxjs",
+        "event bus",
+        "reducer",
+        "factory"
+    ],
+    "author": "Andrew J. Peterson",
+    "license": "Apache-2.0",
+    "bugs": {
+        "url": "https://github.com/ndp-software/pilota/issues"
+    },
+    "homepage": "https://github.com/ndp-software/pilota#readme",
+    "dependencies": {
+        "rxjs": "^7"
+    },
+    "devDependencies": {
+        "@babel/cli": "*",
+        "@babel/core": "*",
+        "@babel/preset-env": "*",
+        "@babel/register": "*",
+        "babel-loader": "*",
+        "chai": "*",
+        "mocha": "*",
+        "rxjs-compat": "*",
+        "simple-mock": "*",
+        "webpack": "*",
+        "webpack-cli": "*",
+        "yargs": "*"
+    }
 }
