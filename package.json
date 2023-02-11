@@ -1,6 +1,6 @@
 {
     "name": "pilota",
-    "version": "7.1.0",
+    "version": "7.1.1",
     "description": "Command bus for RxJS",
     "scripts": {
         "build": "node ./node_modules/.bin/webpack-cli --progress --mode=production",
