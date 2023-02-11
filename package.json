@@ -40,7 +40,6 @@
         "babel-loader": "*",
         "chai": "*",
         "mocha": "*",
-        "rxjs-compat": "*",
         "simple-mock": "*",
         "webpack": "*",
         "webpack-cli": "*",
