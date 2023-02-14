@@ -2,16 +2,14 @@
     "name": "pilota",
     "version": "7.1.1",
     "description": "Command bus for RxJS",
+    "type": "module",
+    "module": "./src/pilota.js",
     "scripts": {
-        "build": "node ./node_modules/.bin/webpack-cli --progress --mode=production",
-        "test": "mocha --require @babel/register --colors 'test/**/*spec.js'",
-        "test:watch": "mocha --require babel-core/register --colors -w 'test/**/*spec.js'",
-        "dev": "WEBPACK_ENV=dev node ./node_modules/.bin/webpack-cli watch --mode=development"
+        "test": "mocha --colors 'test/**/*spec.js'",
+        "test:watch": "mocha --require babel-core/register --colors -w 'test/**/*spec.js'"
     },
-    "main": "lib/pilota.js",
     "files": [
-        "lib/pilota.js",
-        "lib/pilota.js.map"
+        "src/"
     ],
     "repository": {
         "type": "git",
@@ -33,16 +31,8 @@
         "rxjs": "^7"
     },
     "devDependencies": {
-        "@babel/cli": "*",
-        "@babel/core": "*",
-        "@babel/preset-env": "*",
-        "@babel/register": "*",
-        "babel-loader": "*",
         "chai": "*",
         "mocha": "*",
-        "simple-mock": "*",
-        "webpack": "*",
-        "webpack-cli": "*",
-        "yargs": "*"
+        "simple-mock": "*"
     }
 }

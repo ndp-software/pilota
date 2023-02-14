@@ -1,8 +1,3 @@
-import { newCmdBus$, logCmdBus } from './cmdBus.js'
-import { submodelCmd } from './submodelCmd.js'
-
-export default {
-  newCmdBus$,
-  logCmdBus,
-  submodelCmd
-}
+export { submodelCmd } from './submodelCmd.js'
+export { newCmdBus$, logCmdBus } from './cmdBus.js'
+// export default { submodelCmd, newCmdBus$, logCmdBus }
